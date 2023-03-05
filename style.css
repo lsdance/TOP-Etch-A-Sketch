@@ -1,6 +1,59 @@
 @import url('./normalize.css');
 
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 15px;
+  background-color: gold;
+}
+
 .container {
-  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+.square {
+  background-color: antiquewhite;
+  /* height: 40px;
+  width: 40px; */
+  border: 1px solid aquamarine;
+}
+
+.content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid gold;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn:active {
+  background-color: gainsboro;
+  color: black;
 }
